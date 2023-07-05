@@ -1,14 +1,7 @@
--- Zephyr Infinite
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
-game:FindService("StarterGui"):SetCore("SendNotification", {
-	Title = "Zephyr Infinite Loaded",
-	Text = "Zephyr Infinite Is Loaded",
-	Icon = "",
-	Duration = 3
-})
 
 local Zypher = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -25,33 +18,54 @@ local EC = Instance.new("TextButton")
 local Btools = Instance.new("TextButton")
 local Notify = Instance.new("TextButton")
 local OAGL = Instance.new("TextButton")
+local ZCH = Instance.new("TextButton")
 local Title = Instance.new("TextLabel")
-local Notify_2 = Instance.new("Frame")
+local WhenGuiVisible = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
+local LoadText = Instance.new("TextLabel")
+local Version = Instance.new("TextLabel")
+local Notify_2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
 local WhoMessaged = Instance.new("TextLabel")
 local Message = Instance.new("TextLabel")
 local NotifyFrame = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local TextBox = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 local Title_2 = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 local OAGL_2 = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local TextButton_2 = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local TextButton_3 = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local TextButton_4 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local TextButton_5 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Close_2 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local ZCH_2 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Title_3 = Instance.new("TextLabel")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local as = Instance.new("TextButton")
+local psx = Instance.new("TextButton")
+local mm2 = Instance.new("TextButton")
+local bh = Instance.new("TextButton")
+local RF = Instance.new("TextButton")
+local Close_3 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
 
 --Properties:
 
 Zypher.Name = "Zypher"
 Zypher.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Zypher.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Zypher.ResetOnSpawn = false
 
 Frame.Parent = Zypher
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -206,6 +220,18 @@ OAGL.Text = "Open Admin Gui Loader"
 OAGL.TextColor3 = Color3.fromRGB(0, 0, 0)
 OAGL.TextSize = 14.000
 
+ZCH.Name = "ZCH"
+ZCH.Parent = ScrollingFrame
+ZCH.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ZCH.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ZCH.BorderSizePixel = 2
+ZCH.Position = UDim2.new(0, 0, 0.43037352, 0)
+ZCH.Size = UDim2.new(0, 251, 0, 22)
+ZCH.Font = Enum.Font.SourceSans
+ZCH.Text = "Open Zypher Cheat Hub (ZCH)"
+ZCH.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZCH.TextSize = 14.000
+
 Title.Name = "Title"
 Title.Parent = Frame
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -221,6 +247,48 @@ Title.TextScaled = true
 Title.TextSize = 14.000
 Title.TextWrapped = true
 
+WhenGuiVisible.Name = "WhenGuiVisible"
+WhenGuiVisible.Parent = Frame
+WhenGuiVisible.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+WhenGuiVisible.BackgroundTransparency = 0.500
+WhenGuiVisible.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WhenGuiVisible.BorderSizePixel = 0
+WhenGuiVisible.Position = UDim2.new(-3.21484375, 0, 0.548872173, 0)
+WhenGuiVisible.Size = UDim2.new(0, 189, 0, 91)
+WhenGuiVisible.Visible = false
+
+UICorner_2.Parent = WhenGuiVisible
+
+LoadText.Name = "LoadText"
+LoadText.Parent = WhenGuiVisible
+LoadText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadText.BackgroundTransparency = 1.000
+LoadText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LoadText.BorderSizePixel = 0
+LoadText.Position = UDim2.new(0.105820104, 0, 0.00126104429, 0)
+LoadText.Size = UDim2.new(0, 149, 0, 39)
+LoadText.Font = Enum.Font.SourceSansBold
+LoadText.Text = "Zephyr Infinite is loaded"
+LoadText.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadText.TextScaled = true
+LoadText.TextSize = 14.000
+LoadText.TextWrapped = true
+
+Version.Name = "Version"
+Version.Parent = WhenGuiVisible
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Version.BorderSizePixel = 0
+Version.Position = UDim2.new(0.10180746, 0, 0.426589787, 0)
+Version.Size = UDim2.new(0, 156, 0, 39)
+Version.Font = Enum.Font.SourceSansBold
+Version.Text = "Version = "
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextScaled = true
+Version.TextSize = 14.000
+Version.TextWrapped = true
+
 Notify_2.Name = "Notify"
 Notify_2.Parent = Zypher
 Notify_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
@@ -230,7 +298,7 @@ Notify_2.Position = UDim2.new(0.762859106, 0, 0, 0)
 Notify_2.Size = UDim2.new(0, 255, 0, 82)
 Notify_2.Visible = false
 
-UICorner_2.Parent = Notify_2
+UICorner_3.Parent = Notify_2
 
 WhoMessaged.Name = "WhoMessaged"
 WhoMessaged.Parent = Notify_2
@@ -271,7 +339,7 @@ NotifyFrame.Position = UDim2.new(0.113067657, 0, 0.16141732, 0)
 NotifyFrame.Size = UDim2.new(0, 277, 0, 264)
 NotifyFrame.Visible = false
 
-UICorner_3.Parent = NotifyFrame
+UICorner_4.Parent = NotifyFrame
 
 TextBox.Parent = NotifyFrame
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -315,6 +383,23 @@ Title_2.TextScaled = true
 Title_2.TextSize = 14.000
 Title_2.TextWrapped = true
 
+Close.Name = "Close"
+Close.Parent = NotifyFrame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.890365839, 0, -0.00141725317, 0)
+Close.Size = UDim2.new(0, 35, 0, 36)
+Close.AutoButtonColor = false
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_5.Parent = Close
+
 OAGL_2.Name = "OAGL"
 OAGL_2.Parent = Zypher
 OAGL_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
@@ -324,7 +409,7 @@ OAGL_2.Position = UDim2.new(0.0518999062, 0, 0.112204723, 0)
 OAGL_2.Size = UDim2.new(0, 300, 0, 326)
 OAGL_2.Visible = false
 
-UICorner_4.Parent = OAGL_2
+UICorner_6.Parent = OAGL_2
 
 TextLabel.Parent = OAGL_2
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -352,7 +437,7 @@ TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
 
-UICorner_5.Parent = TextButton_2
+UICorner_7.Parent = TextButton_2
 
 TextButton_3.Parent = OAGL_2
 TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -367,7 +452,7 @@ TextButton_3.TextScaled = true
 TextButton_3.TextSize = 14.000
 TextButton_3.TextWrapped = true
 
-UICorner_6.Parent = TextButton_3
+UICorner_8.Parent = TextButton_3
 
 TextButton_4.Parent = OAGL_2
 TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -382,7 +467,7 @@ TextButton_4.TextScaled = true
 TextButton_4.TextSize = 14.000
 TextButton_4.TextWrapped = true
 
-UICorner_7.Parent = TextButton_4
+UICorner_9.Parent = TextButton_4
 
 TextButton_5.Parent = OAGL_2
 TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -397,11 +482,151 @@ TextButton_5.TextScaled = true
 TextButton_5.TextSize = 14.000
 TextButton_5.TextWrapped = true
 
-UICorner_8.Parent = TextButton_5
+UICorner_10.Parent = TextButton_5
+
+Close_2.Name = "Close"
+Close_2.Parent = OAGL_2
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.9236992, 0, -0.0351595841, 0)
+Close_2.Size = UDim2.new(0, 35, 0, 36)
+Close_2.AutoButtonColor = false
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close_2.TextScaled = true
+Close_2.TextSize = 14.000
+Close_2.TextWrapped = true
+
+UICorner_11.Parent = Close_2
+
+ZCH_2.Name = "ZCH"
+ZCH_2.Parent = Zypher
+ZCH_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ZCH_2.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+ZCH_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ZCH_2.BorderSizePixel = 0
+ZCH_2.Position = UDim2.new(0.190740734, 0, 0.42125982, 0)
+ZCH_2.Size = UDim2.new(0, 328, 0, 316)
+ZCH_2.Visible = false
+
+UICorner_12.Parent = ZCH_2
+
+Title_3.Name = "Title"
+Title_3.Parent = ZCH_2
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0.195121944, 0, 0, 0)
+Title_3.Size = UDim2.new(0, 200, 0, 50)
+Title_3.Font = Enum.Font.Highway
+Title_3.Text = "Zypher Cheat Hub"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+ScrollingFrame_2.Parent = ZCH_2
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_2.BackgroundTransparency = 1.000
+ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame_2.BorderSizePixel = 0
+ScrollingFrame_2.Position = UDim2.new(4.65206966e-08, 0, 0.148734227, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 328, 0, 269)
+
+as.Name = "as"
+as.Parent = ScrollingFrame_2
+as.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+as.BorderColor3 = Color3.fromRGB(0, 0, 0)
+as.BorderSizePixel = 0
+as.Position = UDim2.new(-4.65206966e-08, 0, 0, 0)
+as.Size = UDim2.new(0, 328, 0, 26)
+as.Font = Enum.Font.SourceSans
+as.Text = "Arsenal"
+as.TextColor3 = Color3.fromRGB(0, 0, 0)
+as.TextScaled = true
+as.TextSize = 14.000
+as.TextWrapped = true
+
+psx.Name = "psx"
+psx.Parent = ScrollingFrame_2
+psx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+psx.BorderColor3 = Color3.fromRGB(0, 0, 0)
+psx.BorderSizePixel = 0
+psx.Position = UDim2.new(-4.65206966e-08, 0, 0.0411392413, 0)
+psx.Size = UDim2.new(0, 328, 0, 26)
+psx.Font = Enum.Font.SourceSans
+psx.Text = "PSX"
+psx.TextColor3 = Color3.fromRGB(0, 0, 0)
+psx.TextScaled = true
+psx.TextSize = 14.000
+psx.TextWrapped = true
+
+mm2.Name = "mm2"
+mm2.Parent = ScrollingFrame_2
+mm2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mm2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mm2.BorderSizePixel = 0
+mm2.Position = UDim2.new(-4.65206966e-08, 0, 0.0822784826, 0)
+mm2.Size = UDim2.new(0, 328, 0, 26)
+mm2.Font = Enum.Font.SourceSans
+mm2.Text = "MM2"
+mm2.TextColor3 = Color3.fromRGB(0, 0, 0)
+mm2.TextScaled = true
+mm2.TextSize = 14.000
+mm2.TextWrapped = true
+
+bh.Name = "bh"
+bh.Parent = ScrollingFrame_2
+bh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bh.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bh.BorderSizePixel = 0
+bh.Position = UDim2.new(-4.65206966e-08, 0, 0.12341772, 0)
+bh.Size = UDim2.new(0, 328, 0, 26)
+bh.Font = Enum.Font.SourceSans
+bh.Text = "Brookhaven"
+bh.TextColor3 = Color3.fromRGB(0, 0, 0)
+bh.TextScaled = true
+bh.TextSize = 14.000
+bh.TextWrapped = true
+
+RF.Name = "RF"
+RF.Parent = ScrollingFrame_2
+RF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RF.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RF.BorderSizePixel = 0
+RF.Position = UDim2.new(-4.65206966e-08, 0, 0.164556965, 0)
+RF.Size = UDim2.new(0, 328, 0, 26)
+RF.Font = Enum.Font.SourceSans
+RF.Text = "Rainbow Friends (COMING SOON)"
+RF.TextColor3 = Color3.fromRGB(0, 0, 0)
+RF.TextScaled = true
+RF.TextSize = 14.000
+RF.TextWrapped = true
+
+Close_3.Name = "Close"
+Close_3.Parent = ZCH_2
+Close_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_3.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Close_3.BorderSizePixel = 0
+Close_3.Position = UDim2.new(0.890365839, 0, -0.00141725317, 0)
+Close_3.Size = UDim2.new(0, 35, 0, 36)
+Close_3.AutoButtonColor = false
+Close_3.Font = Enum.Font.SourceSans
+Close_3.Text = "X"
+Close_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close_3.TextScaled = true
+Close_3.TextSize = 14.000
+Close_3.TextWrapped = true
+
+UICorner_13.Parent = Close_3
 
 -- Scripts:
 
-local function JRMZSZ_fake_script() -- SpamNewPart.LocalScript 
+local function CWQSPWW_fake_script() -- SpamNewPart.LocalScript 
 	local script = Instance.new('LocalScript', SpamNewPart)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -439,8 +664,8 @@ local function JRMZSZ_fake_script() -- SpamNewPart.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JRMZSZ_fake_script)()
-local function CDRJIZR_fake_script() -- Fling.LocalScript 
+coroutine.wrap(CWQSPWW_fake_script)()
+local function BGVL_fake_script() -- Fling.LocalScript 
 	local script = Instance.new('LocalScript', Fling)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -505,7 +730,6 @@ local function CDRJIZR_fake_script() -- Fling.LocalScript
 		Main.BorderSizePixel = 0
 		Main.Position = UDim2.new(0.174545452, 0, 0.459574461, 0)
 		Main.Size = UDim2.new(0, 454, 0, 218)
-		Main.Color = Color3.new(1, 0.533333, 0)
 	
 		Top.Name = "Top"
 		Top.Parent = Main
@@ -573,8 +797,8 @@ local function CDRJIZR_fake_script() -- Fling.LocalScript
 		notif("Loaded successfully! Created by scuba#0001", 5)
 	end)
 end
-coroutine.wrap(CDRJIZR_fake_script)()
-local function LYVHI_fake_script() -- Fly.LocalScript 
+coroutine.wrap(BGVL_fake_script)()
+local function WANWZ_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -582,8 +806,8 @@ local function LYVHI_fake_script() -- Fly.LocalScript
 	end)
 	
 end
-coroutine.wrap(LYVHI_fake_script)()
-local function KBJWTAS_fake_script() -- TPTOOL.LocalScript 
+coroutine.wrap(WANWZ_fake_script)()
+local function JDGGL_fake_script() -- TPTOOL.LocalScript 
 	local script = Instance.new('LocalScript', TPTOOL)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -624,8 +848,8 @@ local function KBJWTAS_fake_script() -- TPTOOL.LocalScript
 	
 	end)
 end
-coroutine.wrap(KBJWTAS_fake_script)()
-local function UXJYHRM_fake_script() -- Goto.LocalScript 
+coroutine.wrap(JDGGL_fake_script)()
+local function GSJHS_fake_script() -- Goto.LocalScript 
 	local script = Instance.new('LocalScript', Goto)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -794,8 +1018,8 @@ local function UXJYHRM_fake_script() -- Goto.LocalScript
 		TextBox.TextSize = 40.000
 	end)
 end
-coroutine.wrap(UXJYHRM_fake_script)()
-local function PSUK_fake_script() -- EC.LocalScript 
+coroutine.wrap(GSJHS_fake_script)()
+local function YRLFHU_fake_script() -- EC.LocalScript 
 	local script = Instance.new('LocalScript', EC)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -817,8 +1041,8 @@ local function PSUK_fake_script() -- EC.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(PSUK_fake_script)()
-local function KEAXUJH_fake_script() -- Btools.LocalScript 
+coroutine.wrap(YRLFHU_fake_script)()
+local function SHYPCGJ_fake_script() -- Btools.LocalScript 
 	local script = Instance.new('LocalScript', Btools)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -826,8 +1050,8 @@ local function KEAXUJH_fake_script() -- Btools.LocalScript
 	end)
 	
 end
-coroutine.wrap(KEAXUJH_fake_script)()
-local function EXMYKVX_fake_script() -- Notify.LocalScript 
+coroutine.wrap(SHYPCGJ_fake_script)()
+local function UCVW_fake_script() -- Notify.LocalScript 
 	local script = Instance.new('LocalScript', Notify)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -840,8 +1064,8 @@ local function EXMYKVX_fake_script() -- Notify.LocalScript
 		nf.Visible = false
 	end)
 end
-coroutine.wrap(EXMYKVX_fake_script)()
-local function CEVH_fake_script() -- OAGL.LocalScript 
+coroutine.wrap(UCVW_fake_script)()
+local function DTYHTD_fake_script() -- OAGL.LocalScript 
 	local script = Instance.new('LocalScript', OAGL)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -852,8 +1076,17 @@ local function CEVH_fake_script() -- OAGL.LocalScript
 		script.Parent.Parent.Parent.Parent.OAGL.Visible = false
 	end)
 end
-coroutine.wrap(CEVH_fake_script)()
-local function FKZKY_fake_script() -- Title.LocalScript 
+coroutine.wrap(DTYHTD_fake_script)()
+local function HCWLIZL_fake_script() -- ZCH.LocalScript 
+	local script = Instance.new('LocalScript', ZCH)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local ZCH = script.Parent.Parent.Parent.Parent.ZCH
+		ZCH.Visible = true
+	end)
+end
+coroutine.wrap(HCWLIZL_fake_script)()
+local function UEPZVH_fake_script() -- Title.LocalScript 
 	local script = Instance.new('LocalScript', Title)
 
 	local t = 5; --how long does it take to go through the rainbow
@@ -869,8 +1102,8 @@ local function FKZKY_fake_script() -- Title.LocalScript
 		Text.TextColor3 = color
 	end)
 end
-coroutine.wrap(FKZKY_fake_script)()
-local function XCDBU_fake_script() -- Frame.MoveToDrag 
+coroutine.wrap(UEPZVH_fake_script)()
+local function HBXVWMB_fake_script() -- Frame.MoveToDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local fram = script.Parent
@@ -878,8 +1111,28 @@ local function XCDBU_fake_script() -- Frame.MoveToDrag
 	fram.Active = true
 	fram.Draggable = true
 end
-coroutine.wrap(XCDBU_fake_script)()
-local function RNYJ_fake_script() -- Message.Blacklisted Message 
+coroutine.wrap(HBXVWMB_fake_script)()
+local function TRNMWTU_fake_script() -- Version.Script 
+	local script = Instance.new('Script', Version)
+
+	script.Parent.Text = "Version: 1.1 Beta"
+end
+coroutine.wrap(TRNMWTU_fake_script)()
+local function ONQKV_fake_script() -- WhenGuiVisible.Script 
+	local script = Instance.new('Script', WhenGuiVisible)
+
+	local ZFRAME = script.Parent.Parent
+	local PFRAME = script.Parent
+	
+	if ZFRAME.Visible then
+		PFRAME.Visible = true
+		wait(4)
+		PFRAME.Visible = false
+		PFRAME:Destroy()
+	end
+end
+coroutine.wrap(ONQKV_fake_script)()
+local function RTOGOIM_fake_script() -- Message.Blacklisted Message 
 	local script = Instance.new('LocalScript', Message)
 
 	local blacklist = {
@@ -896,8 +1149,8 @@ local function RNYJ_fake_script() -- Message.Blacklisted Message
 		script.Parent.text = "#"
 	end
 end
-coroutine.wrap(RNYJ_fake_script)()
-local function KHQDW_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(RTOGOIM_fake_script)()
+local function IHLJHU_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -909,8 +1162,8 @@ local function KHQDW_fake_script() -- TextButton.LocalScript
 		notify.Visible = false
 	end)
 end
-coroutine.wrap(KHQDW_fake_script)()
-local function VUMWB_fake_script() -- NotifyFrame.LocalScript 
+coroutine.wrap(IHLJHU_fake_script)()
+local function CWCWIZB_fake_script() -- NotifyFrame.LocalScript 
 	local script = Instance.new('LocalScript', NotifyFrame)
 
 	local not1 = script.Parent
@@ -918,32 +1171,48 @@ local function VUMWB_fake_script() -- NotifyFrame.LocalScript
 	not1.Selectable = true
 	not1.Draggable = true
 end
-coroutine.wrap(VUMWB_fake_script)()
-local function YDVBACN_fake_script() -- TextButton_2.Script 
+coroutine.wrap(CWCWIZB_fake_script)()
+local function GJZHKUK_fake_script() -- Close.Script 
+	local script = Instance.new('Script', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local fram = script.Parent.Parent
+		fram.Visible = false
+	end)
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.new(1, 0, 0)
+	end)
+	wait(1)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.new(1, 1, 1)
+	end)
+end
+coroutine.wrap(GJZHKUK_fake_script)()
+local function PZNA_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:GetHttp("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	end)
 end
-coroutine.wrap(YDVBACN_fake_script)()
-local function ORHYS_fake_script() -- TextButton_3.Script 
+coroutine.wrap(PZNA_fake_script)()
+local function XUCUDPG_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 	end)
 end
-coroutine.wrap(ORHYS_fake_script)()
-local function LOUXU_fake_script() -- TextButton_4.Script 
+coroutine.wrap(XUCUDPG_fake_script)()
+local function GCFG_fake_script() -- TextButton_4.Script 
 	local script = Instance.new('Script', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 	end)
 end
-coroutine.wrap(LOUXU_fake_script)()
-local function KNWGSJY_fake_script() -- OAGL_2.LocalScript 
+coroutine.wrap(GCFG_fake_script)()
+local function ANNQCJG_fake_script() -- OAGL_2.LocalScript 
 	local script = Instance.new('LocalScript', OAGL_2)
 
 	local q = script.Parent
@@ -951,4 +1220,115 @@ local function KNWGSJY_fake_script() -- OAGL_2.LocalScript
 	q.Selectable = true
 	q.Draggable = true
 end
-coroutine.wrap(KNWGSJY_fake_script)()
+coroutine.wrap(ANNQCJG_fake_script)()
+local function UBDJTE_fake_script() -- Close_2.Script 
+	local script = Instance.new('Script', Close_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local fram = script.Parent.Parent
+		fram.Visible = false
+	end)
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.new(1, 0, 0)
+	end)
+	wait(1)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.new(1, 1, 1)
+	end)
+end
+coroutine.wrap(UBDJTE_fake_script)()
+local function UQUXA_fake_script() -- as.Script 
+	local script = Instance.new('Script', as)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+	end)
+	
+	function GameDetection()
+		if game.GameId == not 286090429 then
+			script:Destroy()
+		end
+	end
+end
+coroutine.wrap(UQUXA_fake_script)()
+local function IRZZGY_fake_script() -- psx.Script 
+	local script = Instance.new('Script', psx)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BadScripters/CloudHub/main/hub"))()
+	end)
+	
+	function GameDetection()
+		if game.GameId == not 6284583030 then
+			script:Destroy()
+		end
+	end
+end
+coroutine.wrap(IRZZGY_fake_script)()
+local function YRTR_fake_script() -- mm2.Script 
+	local script = Instance.new('Script', mm2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\106\101\110\115\100\101\118\101\108\111\112\101\114\47\74\101\110\115\72\117\98\47\109\97\105\110\47\83\99\114\105\112\116\34\41\41\40\41\10")()
+	end)
+	
+	function GameDetection()
+		if game.GameId == not 142823291 then
+			script:Destroy()
+		end
+	end
+end
+coroutine.wrap(YRTR_fake_script)()
+local function GEQLJ_fake_script() -- bh.Script 
+	local script = Instance.new('Script', bh)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+	end)
+	
+	function GameDetection()
+		if game.GameId == not 4924922222 then
+			script:Destroy()
+		end
+	end
+end
+coroutine.wrap(GEQLJ_fake_script)()
+local function ZRVP_fake_script() -- RF.Script 
+	local script = Instance.new('Script', RF)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+	end)
+	
+	function GameDetection()
+		if game.GameId == not 4924922222 then
+			script:Destroy()
+		end
+	end
+end
+coroutine.wrap(ZRVP_fake_script)()
+local function ITQUIR_fake_script() -- ZCH_2.movetotdrag 
+	local script = Instance.new('LocalScript', ZCH_2)
+
+	local zch = script.Parent
+	zch.Active = true
+	zch.Selectable = true
+	zch.Draggable = true
+end
+coroutine.wrap(ITQUIR_fake_script)()
+local function XRKP_fake_script() -- Close_3.Script 
+	local script = Instance.new('Script', Close_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local fram = script.Parent.Parent
+		fram.Visible = false
+	end)
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.new(1, 0, 0)
+	end)
+	wait(1)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BackgroundColor3 = Color3.new(1, 1, 1)
+	end)
+end
+coroutine.wrap(XRKP_fake_script)()
