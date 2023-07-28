@@ -11,3 +11,8 @@ we do bunch of hacking content!
 # Thank you for reading!
 .
 # - MorePlaceToHax 4
+
+# -- Changelogs --
+- Deleted Notify, NotifyFrame
++ Make the gui even better(Mod menu)
++ Added Creator Tab
