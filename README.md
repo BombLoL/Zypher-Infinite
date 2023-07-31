@@ -1,3 +1,7 @@
+# Zypher-Infinite Is Discountinued!.
+# That will mean, Zypher-Infinite will not get updated
+# You still could use it!
+
 # Zypher-Infinite
 Zypher is a roblox mod menu(for pc, need executor), most of the hacks works, thank you to NeverUnplay2 for helping us.
 # Info About Us
