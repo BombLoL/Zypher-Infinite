@@ -5,7 +5,7 @@
 # Zypher-Infinite
 Zypher is a roblox mod menu(for pc, need executor), most of the hacks works, thank you to NeverUnplay2 for helping us.
 # Info About Us
-We are MorePlaceToHax, you can check us out!                                    
+We are HappyModder, you can check us out!                                    
 Youtube: [Youtube](https://www.youtube.com/channel/UCkReo_AN4Uh-gAKtFV6T9-Q)                                   
 Discord: [Discord](https://discord.gg/invite/Np2N7uRZtz)
 # Support
@@ -14,7 +14,7 @@ we do bunch of hacking content!
 
 # Thank you for reading!
 .
-# - MorePlaceToHax 4
+# - HappyModder
 
 # -- Changelogs --
 - Deleted Notify, NotifyFrame
